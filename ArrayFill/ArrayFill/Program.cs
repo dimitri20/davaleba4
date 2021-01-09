@@ -8,7 +8,7 @@ namespace ArrayFill
         {
             int[] arr = new int[15];
             int count = 0;
-            int countEven = 0;
+            int evenSum = 0;
 
             Console.WriteLine("sheiyvanet masivshi chasaweri ricxvi.");
             Console.WriteLine("shesachereblad sheiyvanet aso 'a'.");
@@ -34,13 +34,13 @@ namespace ArrayFill
                 Console.Write($"{i}, ");
                 if(arr[i] %2 == 0)
                 {
-                    countEven++;
+                    evenSum+=arr[i];
                 }
             }
             Console.Write("}\n");
 
             Console.WriteLine("\n\n\n");
-            Console.WriteLine($"masivshi luwi ricxvebis raodenobaa: {countEven}");
+            Console.WriteLine($"masivshi luwi ricxvebis jamia: {evenSum}");
         }
     }
 }
